@@ -44,7 +44,7 @@ A robust, feature-rich Scrapy crawler designed to extract detailed product infor
 
 ## Configuration
 
-* **Search Keyword**: Pass `-a keyword=<term>` to override default search term (e.g., `scrapy crawl amazon_supercharged -a keyword=laptops`).
+* **Search Keyword**: Pass `-a keyword=<term>` to override default search term (e.g., `scrapy crawl amazonScraper -a keyword=laptops`).
 * **Proxies**: Edit the `PROXIES` list in `amazon_spider_supercharged.py` to include your HTTP/HTTPS proxy endpoints.
 * **Throttle Settings**: Adjust AutoThrottle and `DOWNLOAD_DELAY` values in `custom_settings` as needed.
 
@@ -55,15 +55,15 @@ A robust, feature-rich Scrapy crawler designed to extract detailed product infor
 * **Run the spider**:
 
   ```bash
-  scrapy crawl amazon_supercharged -o output.json
+  scrapy crawl amazonScraper -o output.json
   ```
 
   Output formats supported: `JSON`, `CSV`, `XML` (via Scrapy’s `-o` flag).
 
 * **Examples**:
 
-  * Export CSV:  `scrapy crawl amazon_supercharged -a keyword=headphones -o headphones.csv`
-  * Limit depth:  `scrapy crawl amazon_supercharged --depth-limit 3`
+  * Export CSV:  `scrapy crawl amazonScraper -a keyword=headphones -o headphones.csv`
+  * Limit depth:  `scrapy crawl amazonScraper --depth-limit 3`
 
 ---
 
@@ -112,7 +112,7 @@ A robust, feature-rich Scrapy crawler designed to extract detailed product infor
 * Items yield Python dicts with consistent schema; pipe to JSON/CSV:
 
   ```bash
-  scrapy crawl amazon_supercharged -o products.json
+  scrapy crawl amazonScraper -o products.json
   ```
 * Integrate in pipelines (e.g., validation, database insertion) by adding to `ITEM_PIPELINES`.
 
