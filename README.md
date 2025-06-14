@@ -128,7 +128,7 @@ A robust, feature-rich Scrapy crawler designed to extract detailed product infor
 
 ## License
 
-MIT License © Your Name
+MIT License © Oudghiri Mehdi
 
 ---
 
