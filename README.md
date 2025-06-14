@@ -1,4 +1,4 @@
-# Amazon Supercharged Scrapy Spider
+# Amazon Scrapy Spider
 
 A robust, feature-rich Scrapy crawler designed to extract detailed product information from Amazon search results. This project demonstrates advanced Scrapy techniques, including User-Agent rotation, proxy support, AutoThrottle, HTTP caching, error handling, and custom logging (Rich integration).
 
